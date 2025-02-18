@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:gravity="center"
+     android:background="@color/black">
+
+    <RelativeLayout
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content">
+
+        <ImageView
+             android:layout_height="150dp"
+             android:layout_width="150dp"
+             android:layout_marginBottom="20dp"
+             android:src="@drawable/logo"
+             android:layout_centerHorizontal="true"
+             android:id="@+id/logo" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_below="@id/logo"
+             android:gravity="center"
+             android:textAlignment="center"
+             android:padding="16dp"
+             android:layout_centerHorizontal="true"
+             android:textSize="16sp"
+             android:textColor="@color/white"
+             android:layout_marginTop="20dp"
+             android:id="@+id/infoText1"
+             android:text="CarsaiPlay é uma plataforma de streaming online que colecta todos melhores sites de streaming em um so lugar, dando você acesso a diversos filmes, séries, animes, doramas, novelas, animações até hentais, onde você assiste tudo isso de graça na palma da sua mão." />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_below="@id/infoText1"
+             android:gravity="center"
+             android:padding="16dp"
+             android:layout_centerHorizontal="true"
+             android:textSize="16sp"
+             android:textColor="@color/white"
+             android:id="@+id/infoText2"
+             android:text="Para além de assistir tudo isso de graça, você tem acesso a uma grande variedade de HQs, Mangás e Menhwas para ler." />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_below="@id/infoText2"
+             android:gravity="center"
+             android:padding="16dp"
+             android:layout_centerHorizontal="true"
+             android:textSize="16sp"
+             android:textColor="@color/red"
+             android:id="@+id/infoText3"
+             android:text="Alguns sites não são acessíveis com VPN. Se não dar pra acessar certos sites ou se esses sites bloquearem a sua entrada enquanto está conectado com uma VPN, desativa/desconecta VPN ou acesse outros sites." />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_below="@id/infoText3"
+             android:gravity="center"
+             android:padding="16dp"
+             android:layout_centerHorizontal="true"
+             android:textSize="16sp"
+             android:textColor="@color/white"
+             android:id="@+id/infoText4"
+             android:text="Se os sites não funcionarem em contacto com dono do app" />
+
+        <Button
+             android:layout_height="40dp"
+             android:layout_width="wrap_content"
+             android:layout_below="@id/infoText4"
+             android:padding="10dp"
+             android:layout_centerHorizontal="true"
+             android:textSize="16dp"
+             android:backgroundTint="@color/red"
+             android:textColor="@color/white"
+             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+             android:id="@+id/btnAvancar"
+             android:text="AVANÇAR" />
+
+    </RelativeLayout>
+
+</ScrollView>

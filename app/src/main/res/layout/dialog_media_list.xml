@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:padding="16dp"
+     android:orientation="vertical">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:textSize="18sp"
+         android:paddingBottom="8dp"
+         android:id="@+id/title"
+         android:text="Mídias Detectadas"
+         android:textStyle="bold"
+         android:textColor="@color/white" />
+
+    <ListView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:divider="@android:color/darker_gray"
+         android:layout_marginTop="8dp"
+         android:id="@+id/mediaList"
+         android:dividerHeight="1dp">
+
+    </ListView>
+
+    <Button
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginTop="16dp"
+         android:id="@+id/btnClear"
+         android:text="Limpar Lista"
+         android:backgroundTint="@color/red" />
+
+</LinearLayout>

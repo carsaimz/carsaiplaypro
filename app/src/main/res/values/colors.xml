@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="colorBackground">#000000</color>
+    <color name="colorTextPrimary">#000000</color>
+    <color name="colorTextSecondary">#666666</color>
+    <!-- Cores Primárias -->
+ 
+    <color name="dark_red">#D32F2F</color> <!-- Vermelho Escuro -->
+    <color name="light_red">#FF5252</color> <!-- Vermelho Claro -->
+
+    <!-- Cores Neutras -->
+ 
+    <color name="dark_black">#1A1A1A</color> <!-- Preto Suave -->
+    
+    <color name="gray">#CCCCCC</color> <!-- Cinza Claro -->
+    <color name="dark_gray">#333333</color> <!-- Cinza Escuro -->
+
+    <!-- Cores Secundárias -->
+    <color name="error_red">#FF4444</color> <!-- Vermelho para Erros -->
+    <color name="success_green">#4CAF50</color> <!-- Verde para Sucesso -->
+
+    <!-- Cores Específicas -->
+    <color name="navbar_black">#1A1A1A</color> <!-- Preto para Navbar -->
+    <color name="divider_gray">#333333</color> <!-- Cinza para Divisores -->
+    <color name="button_pressed_red">#C62828</color> <!-- Vermelho de Botão Pressionado -->
+     <!-- Brand Colors -->
+    <color name="primary">#000000</color>
+    <color name="primary_dark">#000000</color>
+    <color name="secondary">#000000</color>
+    <color name="secondary_dark">#000000</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#DE000000</color>
+    <color name="text_secondary">#99000000</color>
+    <color name="text_hint">#61000000</color>
+
+    <!-- System Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="error">#B00020</color>
+    <color name="ripple_color">#1F000000</color>
+
+    <!-- Text Input Colors -->
+    <color name="text_input_stroke_color">@color/primary</color>
+    <color name="text_input_background">#F5F5F5</color>
+    
+    <color name="blue">#1E90FF</color>
+    <color name="progressBarColor">#FFD700</color>
+   
+    <color name="red">#a60f1d</color>
+  <color name="colorPrimary">#000000</color>
+    <color name="transparent">#a60f1d00</color>
+  <color name="whatsapp_green">#25D366</color>
+    
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#a60f1e</color>
+    <!-- Progress Bar -->
+    <color name="progress_color">@color/red</color>
+    
+    <!-- FAB Colors -->
+    <color name="fab_background">@color/primary</color>
+    <color name="fab_icon">#FFFFFF</color>
+    
+    <!-- Drawer Colors -->
+    <color name="drawer_background">#FFFFFF</color>
+    <color name="drawer_header_background">@color/primary</color>
+    <color name="drawer_header_text">#FFFFFF</color>
+    
+    <!-- List Colors -->
+    <color name="list_background">#FFFFFF</color>
+    <color name="list_divider">#EEEEEE</color>
+    <color name="list_text_primary">#212121</color>
+    <color name="list_text_secondary">#757575</color>
+    <color name="navigation_icon">#333333</color>
+    <color name="navigation_background">#FFFFFF</color>
+    <color name="button_disabled">#80808080</color>
+</resources>

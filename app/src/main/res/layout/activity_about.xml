@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@color/black"
+     android:padding="16dp">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:padding="16dp"
+         android:orientation="vertical">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/TitleStyle"
+             android:id="@+id/textViewAbout"
+             android:text="@string/about_title"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/DescriptionStyle"
+             android:id="@+id/textViewDescription"
+             android:text="@string/app_description" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/TitleStyle"
+             android:layout_marginTop="24dp"
+             android:id="@+id/textViewDevTitle"
+             android:text="@string/dev_title"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/DescriptionStyle"
+             android:id="@+id/textViewDevDescription"
+             android:text="@string/dev_description" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/TitleStyle"
+             android:layout_marginTop="24dp"
+             android:id="@+id/textViewDevTeamTitle"
+             android:text="@string/dev_team_title"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/DescriptionStyle"
+             android:id="@+id/textViewDevTeamDescription"
+             android:text="@string/dev_team_description" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/TitleStyle"
+             android:layout_marginTop="24dp"
+             android:id="@+id/textViewTestersTitle"
+             android:text="@string/testers_title"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/DescriptionStyle"
+             android:id="@+id/textViewTestersDescription"
+             android:text="@string/testers_description" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/TitleStyle"
+             android:layout_marginTop="24dp"
+             android:id="@+id/textViewCollaboratorsTitle"
+             android:text="@string/collaborators_title"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/DescriptionStyle"
+             android:id="@+id/textViewCollaboratorsDescription"
+             android:text="@string/collaborators_description" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/TitleStyle"
+             android:layout_marginTop="24dp"
+             android:id="@+id/textViewSupportersTitle"
+             android:text="@string/supporters_title"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textColor="@color/white"
+             style="@style/DescriptionStyle"
+             android:id="@+id/textViewSupportersDescription"
+             android:text="@string/supporters_description" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:textAlignment="center"
+             android:textSize="14sp"
+             android:textColor="@color/white"
+             android:layout_marginTop="32dp"
+             android:id="@+id/textViewVersion"
+             android:text="@string/version" />
+
+    </LinearLayout>
+
+</ScrollView>

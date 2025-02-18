@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "728228416470",
+    "firebase_url": "https://carsaimz-default-rtdb.firebaseio.com",
+    "project_id": "carsaimz",
+    "storage_bucket": "carsaimz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728228416470:android:8c6750f74b2f5034827277",
+        "android_client_info": {
+          "package_name": "com.carsaimz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728228416470-kc48gda5dr3n9jj9eslrtjidud5ic00u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnI2iCkS--i4j2nfY80M4GKj1WsFKWlLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728228416470-ifjldpfjnk2ctvnrnjq97pem4n8rjjqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728228416470:android:aabfcc8b4339e90a827277",
+        "android_client_info": {
+          "package_name": "com.carsaimz.web"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728228416470-kc48gda5dr3n9jj9eslrtjidud5ic00u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnI2iCkS--i4j2nfY80M4GKj1WsFKWlLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728228416470-ifjldpfjnk2ctvnrnjq97pem4n8rjjqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728228416470:android:b3d67227e8239a22827277",
+        "android_client_info": {
+          "package_name": "com.carsaiplay.pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728228416470-kc48gda5dr3n9jj9eslrtjidud5ic00u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnI2iCkS--i4j2nfY80M4GKj1WsFKWlLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728228416470-ifjldpfjnk2ctvnrnjq97pem4n8rjjqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

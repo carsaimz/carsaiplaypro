@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Info -->
+    <string name="app">CarsaiPlay</string>
+    <string name="version">Versão %s</string>
+
+    <!-- Menu Items -->
+    <string name="close">Fechar</string>
+    <string name="account">Minha Conta</string>
+    <string name="update">Atualizar Aplicativo</string>
+    <string name="about">Sobre</string>
+
+
+    <!-- Login/Authentication -->
+    <string name="login">Entrar</string>
+    <string name="login_with_google">Entrar com Google</string>
+    <string name="login_anonymous">Entrar como Anônimo</string>
+    <string name="create_account">Criar Conta</string>
+    <string name="forgot_password">Esqueceu a senha?</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Senha</string>
+    <string name="name_hint">Nome (opcional)</string>
+    <string name="confirm_password_hint">Confirmar Senha</string>
+    <string name="reset_password">Recuperar Senha</string>
+    <string name="logout">Sair</string>
+
+    <!-- Account -->
+    <string name="profile">Perfil</string>
+    <string name="edit_profile">Editar Perfil</string>
+    <string name="change_password">Alterar Senha</string>
+    <string name="subscription">Assinatura</string>
+    <string name="subscription_status">Status da Assinatura</string>
+    <string name="subscription_expires">Expira em: %s</string>
+    <string name="premium_member">Membro Premium</string>
+    <string name="free_member">Membro Gratuito</string>
+
+    <!-- Player -->
+    <string name="channels">Canais</string>
+    <string name="movies">Filmes</string>
+    <string name="series">Séries</string>
+    <string name="favorites">Favoritos</string>
+    <string name="recently_watched">Assistidos Recentemente</string>
+    <string name="add_to_favorites">Adicionar aos Favoritos</string>
+    <string name="remove_from_favorites">Remover dos Favoritos</string>
+    <string name="play">Reproduzir</string>
+    <string name="pause">Pausar</string>
+    <string name="stop">Parar</string>
+    <string name="next">Próximo</string>
+    <string name="previous">Anterior</string>
+
+    <!-- Categories -->
+    <string name="all">Todos</string>
+    <string name="sports">Esportes</string>
+    <string name="news">Notícias</string>
+    <string name="entertainment">Entretenimento</string>
+    <string name="kids">Infantil</string>
+    <string name="documentaries">Documentários</string>
+    <string name="music">Música</string>
+
+    <!-- Settings -->
+    <string name="settings">Configurações</string>
+    <string name="video_quality">Qualidade do Vídeo</string>
+    <string name="auto">Automático</string>
+    <string name="high">Alta</string>
+    <string name="medium">Média</string>
+    <string name="low">Baixa</string>
+    <string name="notifications">Notificações</string>
+    <string name="language">Idioma</string>
+    <string name="dark_mode">Modo Escuro</string>
+    <string name="download_quality">Qualidade do Download</string>
+
+    <!-- Messages -->
+    <string name="welcome_message">Bem-vindo ao CarsaiPlay!</string>
+    <string name="loading">Carregando…</string>
+    <string name="please_wait">Por favor, aguarde…</string>
+    <string name="success">Sucesso!</string>
+    <string name="confirm">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Salvar</string>
+    <string name="delete">Excluir</string>
+    <string name="share">Compartilhar</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_exit_title">Sair do aplicativo</string>
+    <string name="dialog_exit_message">Deseja realmente sair do aplicativo?</string>
+    <string name="dialog_logout_title">Fazer logout</string>
+    <string name="dialog_logout_message">Tem certeza que deseja sair da sua conta?</string>
+    <string name="dialog_update_title">Nova versão disponível</string>
+    <string name="dialog_update_message">Uma nova versão do aplicativo está disponível. Deseja atualizar agora?</string>
+
+    <!-- Support -->
+    <string name="contact_support">Contatar Suporte</string>
+    <string name="faq">Perguntas Frequentes</string>
+    <string name="report_problem">Reportar Problema</string>
+    <string name="feedback">Enviar Feedback</string>
+    <string name="terms_of_service">Termos de Serviço</string>
+    <string name="privacy_policy">Política de Privacidade</string>
+
+    <!-- Network -->
+    <string name="no_internet">Sem conexão com a internet</string>
+    <string name="retry">Tentar novamente</string>
+    <string name="buffering">Carregando buffer…</string>
+
+    <!-- Search -->
+    <string name="search">Pesquisar</string>
+
+    <string name="no_results">Nenhum resultado encontrado</string>
+    <string name="clear_search">Limpar busca</string>
+
+    <!-- Time -->
+    <string name="today">Hoje</string>
+    <string name="yesterday">Ontem</string>
+    <string name="tomorrow">Amanhã</string>
+    <string name="days_ago">Há %d dias</string>
+    <string name="minutes_ago">Há %d minutos</string>
+    <!-- Títulos das seções -->
+    <string name="about_title">Sobre o App</string>
+    <string name="dev_title">Desenvolvedor</string>
+    <string name="dev_team_title">Equipe de Desenvolvimento</string>
+    <string name="testers_title">Testadores</string>
+    <string name="collaborators_title">Colaboradores</string>
+    <string name="supporters_title">Apoiadores</string>
+
+    <!-- Descrições -->
+    <string name="app_description">CarsaiPlay é uma plataforma de streaming online que reúne os melhores sites de streaming em um só lugar, oferecendo acesso a diversos filmes, séries, animes, doramas, novelas, animações e outros conteúdos, tudo gratuitamente na palma da sua mão.</string>
+
+    <string name="dev_description">O app foi desenvolvido por Carimo Saide Mpinda, um jovem moçambicano apaixonado por tecnologia e inovação. Mesmo com recursos limitados, ele conseguiu desenvolver vários aplicativos utilizando Inteligência Artificial como ferramenta de apoio. Seu objetivo é criar soluções que possam ajudar pessoas com menos recursos a terem acesso a entretenimento de qualidade e muito mais.</string>
+
+    <string name="dev_team_description">Equipe CarsaiMz:
+        \n\nLiderança e Desenvolvimento:
+        \n• Carimo Saide Mpinda - Desenvolvedor Principal
+        \n• Unknown - Arquiteto de Software
+        \n• Carimo Saide Mpinda - UI/UX Designer
+
+        \n\nDesenvolvimento Backend:
+        \n• Unknown - Engenheiro Backend
+        \n• Unknown - Desenvolvedor Database
+
+        \n\nDesenvolvimento Frontend:
+        \n• Unknown - Desenvolvedor Frontend
+        \n• Carimo Saide Mpinda - Desenvolvedor Mobile</string>
+
+    <string name="testers_description">Equipe de Testes:
+        \n• Danune Cipriano M. Nipele - Tester QA
+        \n• Lourenço Alírio - Tester QA
+        \n• Maico Million - Tester de Usabilidade
+        \n• Samito Mualeia - Tester de Performance
+        \n\nAgradecemos também a todos os usuários beta que contribuíram com feedback valioso.</string>
+
+    <string name="collaborators_description">Parceiros e Colaboradores:
+        \n• Nasiah Gentivo - Suporte Técnico
+        \n• Nildo Marrengule - Suporte Técnico
+        \n• Rodrigues Albino - Suporte Técnico
+       
+        \n\nAgradecemos a todas as comunidades de desenvolvedores que contribuíram com conhecimento e suporte.</string>
+
+    <string name="supporters_description">Apoiadores e Patrocinadores:
+        \n• Família Mpinda - Suporte Incondicional
+        \n• Comunidade Moçambicana de Desenvolvedores
+        \n• Amigos e Familiares
+        \n• Usuários Fiéis
+
+        \n\nAgradecimento especial:
+        \n• Professores e Mentores
+        \n• Comunidade Open Source
+        \n• Todos que acreditaram no projeto
+</string>
+    <string name="select_website">Selecione um site para acessar:</string>
+    <string name="search_hint">Pesquisar</string>
+    <string name="anime_and_hentai">Animes e Hentai</string>
+    <string name="movies_and_series">Filmes e Séries</string>
+    <string name="comics_and_manga">HQs, Mangás e Manhwas</string>
+    <string name="other_websites">Outros sites podem chegar na próxima atualização</string>
+
+    <string name="animeq">AnimeQ</string>
+    <string name="smart_animes">Smart Animes</string>
+    <string name="anime_fire">Anime Fire</string>
+    <string name="animes_digital">Animes Digital</string>
+    <string name="anroll">Anroll</string>
+    <string name="animes_one_hd">Animes One HD</string>
+    <string name="animes_orion">Animes Orion</string>
+    <string name="animes_drive">Animes Drive</string>
+    <string name="goyabu">Goyabu</string>
+    <string name="animes_hentai">Animes Hentai</string>
+    <string name="assistir_hentai">Assistir Hentai</string>
+    <string name="hentai_legendado">Hentai Legendado</string>
+    <string name="hentai_mania">Hentai Mania</string>
+    <string name="animes_hentai_2">Animes Hentai 2</string>
+    <string name="mega_hentai">Mega Hentai</string>
+    <string name="super_hentai">Super Hentai</string>
+    <string name="animes_hentai_3">Animes Hentai 3</string>
+    <string name="assistir_animes_hentai">Assistir Animes Hentai</string>
+    <string name="x_hentai_tube">X Hentai Tube</string>
+    <string name="baixar_hentais">Baixar Hentais</string>
+    <string name="mega_cine">MegaCine</string>
+    <string name="pobre_flix">PobreFlix</string>
+    <string name="c_play">CPlay</string>
+    <string name="novizer">Novizer</string>
+    <string name="doramogo">Doramogo</string>
+    <string name="filmes_xp">Filmes XP</string>
+    <string name="comando_play">ComandoPlay</string>
+    <string name="box_filmes">Box Filmes</string>
+    <string name="oba_flix">ObaFlix</string>
+    <string name="leitor_manga">Leitor de Manga</string>
+    <string name="manga_br">Manga Br</string>
+    <string name="ler_manga_online">Ler Manga Online</string>
+    <string name="manga_online">Mangá Online</string>
+    <string name="one_peace">One Peace</string>
+    <string name="re_mangas">Re Mangas</string>
+    <string name="lendo_quadrinhos">Lendo Quadrinhos</string>
+    <string name="tudo_hq_manga">Tudo HQ e Mangá</string>
+    <string name="timeline_comics">Timeline Comics</string>
+    <string name="baixar_hq">Baixar HQ</string>
+    <string name="universo_hq">Universo HQ</string>
+    <string name="flip_tru">FlipTru</string>
+    <string name="slide_read">Slide Read</string>
+    <string name="loading_progress_bar">Loading progress bar</string>
+    <string name="loading_message">Carregando, Aguarde por favor...</string>
+    <string name="loading_animation">
+
+        </string>
+    <string name="support">Suporte</string>
+    <string name="open_whatsapp">Open WhatsApp</string>
+    <string name="open_whatsapp_description">Open WhatsApp to contact support</string>
+    <string name="send_email">Send Email</string>
+    <string name="send_email_description">Send an email to support</string>
+
+    <string name="call_support_description">Call support phone number</string>
+    <string name="social_media">Social Media</string>
+    <string name="social_media_description">Contact support through social media</string>
+    <string name="contact_developer_whatsapp">Contact Developer (WhatsApp)</string>
+    <string name="contact_developer_whatsapp_description">Contact Carimo Saide (Developer) on WhatsApp</string>
+    <string name="contact_team_whatsapp">Contact Team (WhatsApp)</string>
+    <string name="contact_team_whatsapp_description">Contact CarsaiMz Team on WhatsApp</string>
+    <string name="contact_developer_email">Contact Developer (Email)</string>
+    <string name="contact_developer_email_description">Send an email to Carimo Saide (Developer)</string>
+    <string name="contact_team_email">Contact Team (Email)</string>
+    <string name="contact_team_email_description">Send an email to CarsaiMz Team</string>
+    <string name="contact_services_email">Contact Services (Email)</string>
+    <string name="contact_services_email_description">Send an email to CarsaiServices</string>
+    <string name="call_support">Call Support</string>
+
+    <string name="facebook">Facebook</string>
+    <string name="facebook_description">Contact CarsaiMz on Facebook</string>
+    <string name="tiktok">TikTok</string>
+    <string name="tiktok_description">Contact CarsaiMz on TikTok</string>
+    <string name="instagram">Instagram</string>
+    <string name="instagram_description">Contact CarsaiMz on Instagram</string>
+    <string name="youtube">YouTube</string>
+    <string name="youtube_description">Visit CarsaiMz YouTube channel</string>
+    <string name="linktree">Linktree</string>
+    <string name="linktree_description">Visit CarsaiMz Linktree</string>
+    <!-- Strings related to WebView Activity -->
+    <string name="back_button">Voltar</string>
+    <string name="refresh_button">Atualizar</string>
+    <string name="forward_button">Avançar</string>
+    <string name="menu_button">Menu</string>
+    <string name="progress_text">0%</string>
+    <string name="error_no_internet">Sem conexão com a internet</string>
+    <string name="error_invalid_email">Email inválido</string>
+    <string name="error_invalid_password">Senha deve conter pelo menos 8 caracteres, incluindo números, letras maiúsculas, minúsculas e caracteres especiais</string>
+    <string name="error_fields_empty">Preencha todos os campos obrigatórios</string>
+    <string name="error_login_failed">Falha no login. Verifique suas credenciais</string>
+    <string name="error_google_sign_in">Erro ao fazer login com Google</string>
+    <string name="error_anonymous_sign_in">Erro ao fazer login anônimo</string>
+    <string name="error_password_reset">Erro ao enviar email de recuperação</string>
+    <string name="drawer_open">Abrir Menu</string>
+    <string name="drawer_close">Fechar Menu</string>
+    <!-- Strings da Barra de Navegação -->
+    <string name="back">Voltar</string>
+    <string name="refresh">Atualizar</string>
+    <string name="forward">Avançar</string>
+    <string name="menu">Menu</string>
+
+    <!-- Mensagens Gerais -->
+  
+    <string name="error">Ocorreu um erro. Tente novamente.</string>
+
+    <!-- Descrições de Conteúdo (Content Descriptions) -->
+    <string name="back_button_description">Botão para voltar à página anterior</string>
+    <string name="refresh_button_description">Botão para recarregar a página</string>
+    <string name="forward_button_description">Botão para avançar à próxima página</string>
+    <string name="menu_button_description">Botão para abrir o menu</string>
+
+    <string name="open_menu">Abrir Menu</string>
+    <string name="close_menu">Fechar Menu</string>
+<string name="nav_header_image">Header Image</string>
+    <string name="subtitle_header">carsaimozambique@gmail.com</string>
+    <string name="menu_account">Minha Conta</string>
+    <string name="menu_about">Sobre</string>
+    <string name="menu_support">Suporte</string>
+</resources>

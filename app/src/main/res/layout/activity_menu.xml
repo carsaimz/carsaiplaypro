@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:gravity="center"
+     android:background="@color/black"
+     tools:context=".ui.MenuActivity">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="0dp"
+         android:elevation="8dp"
+         android:padding="24dp"
+         android:orientation="vertical"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintVertical_bias="0.5"
+         android:background="@drawable/card_background"
+         android:gravity="center"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:id="@+id/layout_menu">
+
+        <ImageView
+             android:layout_height="150dp"
+             android:layout_width="150dp"
+             android:layout_marginBottom="20dp"
+             android:src="@drawable/logo"
+             android:layout_centerHorizontal="true"
+             android:id="@+id/logo" />
+
+        <Button
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="16dp"
+             android:drawablePadding="8dp"
+             android:paddingVertical="12dp"
+             android:textSize="16sp"
+             android:backgroundTint="@color/red"
+             android:textColor="@color/white"
+             android:drawableStart="@drawable/ic_about"
+             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+             android:id="@+id/btn_about"
+             android:text="@string/about" />
+
+        <Button
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="16dp"
+             android:drawablePadding="8dp"
+             android:paddingVertical="12dp"
+             android:textSize="16sp"
+             android:backgroundTint="@color/red"
+             android:textColor="@color/white"
+             android:drawableStart="@drawable/ic_support"
+             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+             android:id="@+id/btn_support"
+             android:text="@string/support" />
+
+        <Button
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="16dp"
+             android:drawablePadding="8dp"
+             android:paddingVertical="12dp"
+             android:textSize="16sp"
+             android:backgroundTint="@color/red"
+             android:textColor="@color/white"
+             android:drawableStart="@drawable/ic_account"
+             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+             android:id="@+id/btn_account"
+             android:text="@string/account" />
+
+        <Button
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:paddingVertical="12dp"
+             android:textSize="16sp"
+             android:backgroundTint="@color/red"
+             android:textColor="@color/white"
+             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+             android:id="@+id/btn_close_menu"
+             android:text="@string/close" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textSize="14sp"
+             android:textColor="@color/white"
+             android:layout_marginTop="24dp"
+             android:id="@+id/tv_version"
+             android:layout_gravity="center_horizontal"
+             android:text="Versão 1.0.0" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
