@@ -95,8 +95,9 @@ public class WebViewActivity extends AppCompatActivity {
                             "googleads",
                             "doubleclick",
                             "adserver",
+            "pop-up",
                             "intent://",
-                            "intent;//ak",
+                            "intent://ak.",
                             "adsystem",
                             "adnxs",
                             "advertising",
@@ -120,10 +121,11 @@ public class WebViewActivity extends AppCompatActivity {
                             "sponsor",
                             "sponsored",
                             "goto",
-                            "aliexpress",
+                            "aliexpress", "reward",
                             "bet",
-                            "bets",
-                            "ak."));
+                            "bets", "perfectgive",
+                            "ak.", "package",
+            "pop-up"));
 
     private void startDownload(
             String url,
@@ -310,13 +312,7 @@ public class WebViewActivity extends AppCompatActivity {
             // Pode-se também exibir uma página de erro personalizada ou recarregar a URL
         }
 
-        // Lida com erros mais graves de rede (disponível a partir do Android 5.0)
-        @Override
-        public void onReceivedHttpError(WebView view, WebResourceRequest request, WebResourceResponse errorResponse) {
-            super.onReceivedHttpError(view, request, errorResponse);
-            progressBar.setVisibility(View.GONE);
-            Toast.makeText(view.getContext(), "Erro de rede: " + errorResponse.getStatusCode(), Toast.LENGTH_SHORT).show();
-        }
+       
 
         // Lida com falhas críticas na conexão, por exemplo, falhas de DNS
         @Override

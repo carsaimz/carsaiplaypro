@@ -35,7 +35,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class SitesActivity extends AppCompatActivity {
@@ -47,8 +49,18 @@ public class SitesActivity extends AppCompatActivity {
     private String apiUrl = "https://67a30b1e409de5ed525729ab.mockapi.io/carsaiplay/Sites";
     private String userPlano;
     private ArrayList<JSONObject> listaSites = new ArrayList<>();
-    private Set<String> categoriasDisponiveis = new HashSet<>();
-    
+    private Set<String> categoriasDisponiveis =
+            new HashSet<>(
+                    Arrays.asList(
+                            "FILMES & SÉRIES",
+                            "ANIMES",
+                            "HENTAIS 🔞",
+                            "HQS & MANGÁS",
+                            "NOVELAS",
+                            "NOTÍCIAS",
+                            "DORAMAS",
+                            "TV"));
+
     // Firebase
     private FirebaseAnalytics firebaseAnalytics;
     private FirebaseCrashlytics crashlytics;
@@ -70,7 +82,7 @@ public class SitesActivity extends AppCompatActivity {
         spinnerCategorias = findViewById(R.id.spinnerCategorias);
 
         userPlano = getIntent().getStringExtra("userPlano");
-        
+
         // Logging do plano do usuário
         crashlytics.setCustomKey("user_plan", userPlano);
         Bundle planBundle = new Bundle();
@@ -81,6 +93,8 @@ public class SitesActivity extends AppCompatActivity {
         sitesAdapter = new SitesAdapter();
         recyclerSites.setAdapter(sitesAdapter);
 
+        // Mostrar tutorial para novos usuários
+        new TutorialManager(this).showTutorialIfNeeded();
         carregarSites();
 
         spinnerCategorias.setOnItemSelectedListener(
@@ -91,13 +105,14 @@ public class SitesActivity extends AppCompatActivity {
                             View view,
                             int position,
                             long id) {
-                        String categoriaSelecionada = spinnerCategorias.getSelectedItem().toString();
-                        
+                        String categoriaSelecionada =
+                                spinnerCategorias.getSelectedItem().toString();
+
                         // Analytics para seleção de categoria
                         Bundle categoryBundle = new Bundle();
                         categoryBundle.putString("selected_category", categoriaSelecionada);
                         firebaseAnalytics.logEvent("category_selected", categoryBundle);
-                        
+
                         if (categoriaSelecionada.equals("HENTAIS 🔞")) {
                             mostrarAvisoHentai();
                         } else {
@@ -125,23 +140,26 @@ public class SitesActivity extends AppCompatActivity {
                             public void onResponse(JSONArray response) {
                                 loadTrace.stop();
                                 performanceTrace.putMetric("sites_loaded", response.length());
-                                
+
                                 Log.d("SitesActivity", "Dados recebidos: " + response.toString());
                                 listaSites.clear();
-                                categoriasDisponiveis.clear();
                                 for (int i = 0; i < response.length(); i++) {
                                     try {
                                         JSONObject site = response.getJSONObject(i);
                                         String categoria = site.getString("category");
-                                        if (!categoria.equals("intent")
+                                        String state = site.getString("state");
+
+                                        if (!state.equals("blocked")
+                                                && !categoria.equals("intent")
                                                 && !categoria.equals("ads")
                                                 && !categoria.equals("pop-up")) {
                                             listaSites.add(site);
-                                            categoriasDisponiveis.add(categoria);
                                         }
                                     } catch (JSONException e) {
                                         crashlytics.recordException(e);
-                                        Log.e("SitesActivity", "Erro ao processar JSON: " + e.getMessage());
+                                        Log.e(
+                                                "SitesActivity",
+                                                "Erro ao processar JSON: " + e.getMessage());
                                         e.printStackTrace();
                                     }
                                 }
@@ -155,9 +173,9 @@ public class SitesActivity extends AppCompatActivity {
                                 crashlytics.recordException(error);
                                 Log.e("SitesActivity", "Erro na requisição: " + error.getMessage());
                                 Toast.makeText(
-                                        SitesActivity.this,
-                                        "Erro ao carregar sites!",
-                                        Toast.LENGTH_SHORT)
+                                                SitesActivity.this,
+                                                "Erro ao carregar sites!",
+                                                Toast.LENGTH_SHORT)
                                         .show();
                             }
                         });
@@ -166,11 +184,17 @@ public class SitesActivity extends AppCompatActivity {
     }
 
     private void preencherSpinnerCategorias() {
-        Set<String> categoriasFormatadas = new HashSet<>();
+        Set<String> categoriasFormatadas = new LinkedHashSet<>();
+
+        // Adicionando categorias na ordem desejada
+        categoriasFormatadas.add("FILMES & SÉRIES");
         for (String categoria : categoriasDisponiveis) {
-            categoriasFormatadas.add(formatarCategoria(categoria));
+            if (!categoria.equals("FILMES & SÉRIES")) {
+                categoriasFormatadas.add(categoria);
+            }
         }
 
+        // Remover categorias conforme o plano do usuário
         if (userPlano.equals("teste")) {
             categoriasFormatadas.removeIf(
                     categoria ->
@@ -195,25 +219,12 @@ public class SitesActivity extends AppCompatActivity {
             textMensagemPremium.setText(
                     "Você tem acesso limitado. Pague o plano BÁSICO ou PREMIUM para ter acesso à lista completa de 3 Categorias.");
         }
-        
+
         // Analytics para categorias disponíveis
         Bundle categoriesBundle = new Bundle();
         categoriesBundle.putString("available_categories", categoriasFormatadas.toString());
         categoriesBundle.putString("user_plan", userPlano);
         firebaseAnalytics.logEvent("categories_loaded", categoriesBundle);
-    }
-
-    private String formatarCategoria(String categoria) {
-        switch (categoria) {
-            case "mangas":
-                return "HQS & MANGÁS";
-            case "hentais":
-                return "HENTAIS 🔞";
-            case "filmes":
-                return "FILMES & SÉRIES";
-            default:
-                return categoria.toUpperCase();
-        }
     }
 
     private void exibirSites(String categoriaSelecionada) {
@@ -232,12 +243,25 @@ public class SitesActivity extends AppCompatActivity {
             }
         }
         sitesAdapter.setSites(sitesFiltrados);
-        
+
         // Analytics para sites exibidos
         Bundle sitesBundle = new Bundle();
         sitesBundle.putString("category", categoriaSelecionada);
         sitesBundle.putInt("sites_count", sitesFiltrados.size());
         firebaseAnalytics.logEvent("sites_displayed", sitesBundle);
+    }
+
+    private String formatarCategoria(String categoria) {
+        switch (categoria) {
+            case "hqs & mangás":
+                return "HQS & MANGÁS";
+            case "hentais":
+                return "HENTAIS 🔞";
+            case "filmes & séries":
+                return "FILMES & SÉRIES";
+            default:
+                return categoria.toUpperCase();
+        }
     }
 
     private void abrirWebView(JSONObject site) {
@@ -247,7 +271,7 @@ public class SitesActivity extends AppCompatActivity {
             siteBundle.putString("site_name", site.getString("name"));
             siteBundle.putString("site_category", site.getString("category"));
             firebaseAnalytics.logEvent("site_accessed", siteBundle);
-            
+
             Intent intent = new Intent(SitesActivity.this, LoadingActivity.class);
             intent.putExtra("siteUrl", site.getString("url"));
             startActivity(intent);
@@ -271,19 +295,21 @@ public class SitesActivity extends AppCompatActivity {
                                 Bundle hentaiBundle = new Bundle();
                                 hentaiBundle.putString("action", "accepted");
                                 firebaseAnalytics.logEvent("adult_content_warning", hentaiBundle);
-                                
+
                                 exibirSites("HENTAIS 🔞");
                             }
                         })
-                .setNegativeButton("Não", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Analytics para rejeição de conteúdo adulto
-                        Bundle hentaiBundle = new Bundle();
-                        hentaiBundle.putString("action", "rejected");
-                        firebaseAnalytics.logEvent("adult_content_warning", hentaiBundle);
-                    }
-                })
+                .setNegativeButton(
+                        "Não",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                // Analytics para rejeição de conteúdo adulto
+                                Bundle hentaiBundle = new Bundle();
+                                hentaiBundle.putString("action", "rejected");
+                                firebaseAnalytics.logEvent("adult_content_warning", hentaiBundle);
+                            }
+                        })
                 .show();
     }
 

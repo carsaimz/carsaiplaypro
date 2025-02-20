@@ -1,95 +1,20 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/CarsaiPlay Pro/app/src/main/java/com/carsaiplay/pro/ui/LoginActivity.java",
-      "selection": {
-        "end": {
-          "column": 21,
-          "index": 13856,
-          "line": 348
-        },
-        "start": {
-          "column": 21,
-          "index": 13856,
-          "line": 348
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/CarsaiPlay Pro/app/src/main/res/layout/activity_login.xml",
-      "selection": {
-        "end": {
-          "column": 0,
-          "index": 5807,
-          "line": 135
-        },
-        "start": {
-          "column": 0,
-          "index": 5807,
-          "line": 135
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/CarsaiPlay Pro/app/src/main/res/values/colors.xml",
+      "file": "/storage/emulated/0/AndroidIDEProjects/CarsaiPlay Pro/app/src/main/AndroidManifest.xml",
       "selection": {
         "end": {
           "column": 38,
-          "index": 1773,
-          "line": 45
+          "index": 5775,
+          "line": 131
         },
         "start": {
-          "column": 17,
-          "index": 1752,
-          "line": 45
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/CarsaiPlay Pro/app/src/main/res/layout/activity_edit_profile.xml",
-      "selection": {
-        "end": {
-          "column": 23,
-          "index": 458,
-          "line": 13
-        },
-        "start": {
-          "column": 23,
-          "index": 458,
-          "line": 13
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/CarsaiPlay Pro/app/src/main/res/layout/activity_info.xml",
-      "selection": {
-        "end": {
-          "column": 13,
-          "index": 3756,
-          "line": 85
-        },
-        "start": {
-          "column": 13,
-          "index": 3756,
-          "line": 85
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/CarsaiPlay Pro/app/src/main/res/layout/activity_menu.xml",
-      "selection": {
-        "end": {
-          "column": 40,
-          "index": 1397,
-          "line": 35
-        },
-        "start": {
-          "column": 40,
-          "index": 1397,
-          "line": 35
+          "column": 38,
+          "index": 5775,
+          "line": 131
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/CarsaiPlay Pro/app/src/main/res/layout/activity_edit_profile.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/CarsaiPlay Pro/app/src/main/AndroidManifest.xml"
 }

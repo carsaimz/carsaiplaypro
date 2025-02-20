@@ -14,7 +14,7 @@ android {
         minSdk 24
         targetSdk 34
         versionCode 70
-        versionName "2.0"
+        versionName "2.0.1"
         
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,7 +34,7 @@ android {
 
     buildFeatures {
         viewBinding true
-        dataBinding false  // Ativando Data Binding
+        dataBinding true  // Ativando Data Binding
     }
 }
 
